@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div id="team">
+    <ul class="list-inline text-center">
+      <% data.users.each do |member|%>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{member['github_nickname']}", class: "avatar" %>
+        <h2><%= member['name'].capitalize %></h2>
+        <p>
+          <i class="fa fa-github"></i>
+          <%= member['github_nickname'].capitalize %>
+        </p>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

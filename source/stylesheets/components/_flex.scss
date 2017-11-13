@@ -1,0 +1,9 @@
+.form-flex {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.form-flex > * {
+  margin: 10px;
+}
